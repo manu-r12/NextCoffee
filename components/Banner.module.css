@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat&family=Noto+Sans:wght@300&family=Open+Sans:wght@300&display=swap');
+.container {
+  /* From https://css.glass */
+ 
+  border-radius: 16px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ 
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(86, 35, 197, 0.5); */
+  position: relative;
+  z-index: 2;
+  top: 6rem;
+  right: -4rem;
+  width: 600px;
+  padding: 20px;
+  margin-bottom:  15rem;
+}
+
+.title {
+  margin: 0;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 3rem /* 48px */;
+  /* font-family: 'Noto', sans-serif; */
+
+}
+
+
+
+.title2 {
+  display: block;
+  color: var(--text-purple);
+  font-weight: bold;
+}
+
+.subTitle {
+
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  
+  color: white;
+}
+
+.buttonWrapper {
+  margin-top: 1.25rem;
+}
+
+.button {
+  background-color: var(--text-purple-dark);
+  cursor: pointer;
+  color: white;
+  outline: none;
+    border: 0;
+  border-radius: 10px;
+  border-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  padding-top: 0.75rem /* 16px */;
+  padding-bottom: 1rem /* 16px */;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  padding-left: 2.5rem /* 40px */;
+  padding-right: 2.5rem /* 40px */;
+}
+
+.button:hover {
+  background-color: var(--text-purple);
+}
+
+/** 
+  Breakpoints:
+  ------------
+  sm: min-width: 640px; //small device
+  md: min-width: 768px; // medium device
+  lg: min-width: 1024px; // large device
+  xl: min-width: 1280px; // extra large device
+  2xl: min-width: 1536px; // 2 x extra large device
+**/
+
+/** sm breakpoint **/
+@media (max-width: 640px) {
+  .title {
+    font-size: 3rem /* 48px */;
+    line-height: 1;
+
+  }
+
+  .container{
+    width: 200px;
+    
+  }
+
+  .subTitle {
+    margin-top: 1.25rem;
+    max-width: 36rem;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    margin-top: 2rem;
+  }
+}
+
+/** md breakpoint **/
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem /* 60px */;
+    line-height: 1;
+  }
+
+  .subTitle {
+    margin-top: 1.25rem;
+  }
+
+  .button {
+    padding-top: 0.8rem /* 16px */;
+    width: 150px;
+    padding-bottom: 1rem /* 16px */;
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+    padding-left: 2.5rem /* 40px */;
+    padding-right: 2.5rem /* 40px */;
+  }
+}
+
+/** lg breakpoint **/
+@media (min-width: 1024px) {
+  .container {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 5.5rem /* 72px */;
+    font-weight: bold;
+  
+
+  }
+
+  .title2 {
+    padding-left: 0.5rem;
+  }
+
+  .subTitle {
+    margin-left: 0px;
+    margin-right: 0px;
+ 
+  }
+
+  .buttonWrapper {
+    justify-content: flex-start;
+  }
+}
+
+/** xl breakpoint **/
+@media (min-width: 1280px) {
+  .title2 {
+    display: inline;
+    margin: 0;
+  }
+}

@@ -1,0 +1,121 @@
+ .image{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 25%;
+ }
+
+
+.heading2{
+text-align: center;
+font-size: 3rem;
+color:white;
+justify-content: center;
+align-items: center;
+display: flex;
+gap: 10px;
+
+
+
+
+ }
+ .heading2icon{
+  font-size: large;
+}
+
+
+.cardLayout {
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   column-gap: 1rem /* 24px */;
+   row-gap: 1rem /* 24px */;
+
+ }
+ 
+ .card {
+   justify-content: center;
+ }
+ 
+ @media (max-width: 640px) {
+   .cardLayout {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+     column-gap: 40px;
+     margin: 10px;
+
+ 
+    
+
+   }
+
+
+   .main{
+    width: 800px;
+  }
+
+  
+   .heading2{
+    text-align: center;
+    font-size: 3rem;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+        
+     }
+     .heading2icon{
+      font-size: medium;
+    }
+    
+    .image{
+     
+      top: 4rem;
+      position: absolute;
+      left: 1%;
+      right: 200px;
+   
+ 
+   }
+ }
+ 
+ @media (min-width: 768px) {
+   .cardLayout {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+  
+   }
+   .heading2{
+    text-align: center;
+    font-size: 3rem;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    
+    
+    
+    
+     }
+     .heading2icon{
+      font-size: medium;
+    }
+    
+ }
+ 
+ @media (min-width: 1024px) {
+   .cardLayout {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+ }
+ 
+ @media (min-width: 1280px) {
+   .cardLayout {
+     
+      width: 80%;
+      column-gap: 1rem ;/* 24px */;
+      row-gap: 1rem ;
+      padding: 40px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+ }
