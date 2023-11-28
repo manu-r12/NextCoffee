@@ -98,7 +98,7 @@ export default function Home(props) {
       )}
     {props.coffeeStore.length > 0 &&  ( 
   <>
-  <h2 className={styles.heading2}><StorefrontIcon fontSize='200px'/>Boston Stores</h2>
+  <h2 className={styles.heading2}><StorefrontIcon fontSize='200px'/>Sample Stores</h2>
   <div className={styles.mainLayout}>
   <div className={styles.cardLayout}>
         {props.coffeeStore.map((cofffe) =>{
