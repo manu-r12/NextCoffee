@@ -96,23 +96,7 @@ export default function Home(props) {
       </div>
       </>
       )}
-    {props.coffeeStore.length > 0 &&  ( 
-  <>
-  <h2 className={styles.heading2}><StorefrontIcon fontSize='200px'/>Sample Stores</h2>
-  <div className={styles.mainLayout}>
-  <div className={styles.cardLayout}>
-        {props.coffeeStore.map((cofffe) =>{
-            return(<Card
-            key = {cofffe.id}
-            name={cofffe.name}
-            alt = {cofffe.name}
-            imgUrl={cofffe.imgUrl || "https://images.unsplash.com/photo-1498804103079-a6351b050096?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80"}
-            href={`/coffee-store/${cofffe.id}`} />)})}
-      </div>
-  </div>
   
-      </>
-      )}
    
       </main>
     </>
