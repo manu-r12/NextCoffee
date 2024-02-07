@@ -50,8 +50,7 @@ export default function Home(props) {
           });
         
         } catch (error) {
-          //set error
-          console.log("Error", { error });
+          //set erro
           setCoffeeStoreErorr(error)
 
         }
